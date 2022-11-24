@@ -1,31 +1,27 @@
-print("Treasure Map - Where do you want to hide it? \n")
+print("Treasure Map Placement Generator\n")
+#rows are nested within map
+row1 = ["X", "X", "X", "X", "X"]
+row2 = ["X", "X", "X", "X", "X"]
+row3 = ["X", "X", "X", "X", "X"]
+row4 = ["X", "X", "X", "X", "X"]
+row5 = ["X", "X", "X", "X", "X"]
 
-row1 = ["o", "o", "o"]
-row2 = ["o", "o", "o"]
-row3= ["o", "o", "o"]
+map = [row1, row2, row3, row4, row5]
 
-map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}\n{row4}\n{row5}")
 
-print(f"{row1}\n{row2}\n{row3}\n")
+print("Where do you want to put your treasure? \n")
+#separated row and column selection to avoid confusion
+row = int(input("Column (Vertical): \n"))
+column = int(input("Row (Horizontal): \n"))
 
-position = input("Where do you want to put the treasure? Column and Row\n")
-#23
-#first digit = column
-#second digit = row
-#put your code here
+map[column - 1][row - 1] = "O"
+#much easier to understand rather than this code
+# selected_column = map[column - 1]
+# selected_column[row - 1] = "O"
 
-horizontal = int(position[0]) #row
-vertical = int(position[1]) #column
-
-selected_row = map[vertical -1 ]
-selected_row[horizontal -1] = "X"
-
-
-
-
+print(f"{row1}\n{row2}\n{row3}\n{row4}\n{row5}")
 
 
-# selected_row = map[vertical - 1]
-# selected_row[horizontal - 1] = "X"
 
-print(f"{row1}\n{row2}\n{row3}\n")
+
