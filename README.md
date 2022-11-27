@@ -1,2 +1,3 @@
 # Python_Journey
-This is the start of my journey learning how to become a snake programmer
+
+These are my daily projects as per my course 100 Days of Python by Dr. Angela Yu
