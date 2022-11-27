@@ -1,9 +1,12 @@
-print("Band Name Generator \n")
+def repeat():
 
-name1 = input("Enter your first name: \n")
-name2 = input("What city do you live? \n")
+  print("Band Name Generator \n")
 
-print("Your awesome band name is " + name1 + name2 + "!\n")
-print("Gather your friends and conquer the world with your music!")
+  name1 = input("Enter your first name: \n")
+  name2 = input("What city do you live? \n")
 
-#hatdog
+  print("Your awesome band name is " + name1 + name2 + "!\n")
+  print("Gather your friends and conquer the world with your music!")
+
+while True:
+  repeat()
